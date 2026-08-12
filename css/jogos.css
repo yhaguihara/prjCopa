@@ -1,16 +1,16 @@
 .cabecalho-principal {
-  padding: 18px 0 10px;
+  padding: 12px 0 8px;
 }
 
 .cabecalho-principal__conteudo {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  gap: 24px;
-  padding: 22px 24px;
+  gap: 18px;
+  padding: 18px 18px;
   background: linear-gradient(180deg, rgba(11, 42, 83, 0.96), rgba(8, 28, 56, 0.92));
   border: 1px solid var(--line);
-  border-radius: 26px;
+  border-radius: 20px;
   box-shadow: var(--shadow);
 }
 
@@ -28,16 +28,16 @@
 }
 
 .cabecalho-principal__imagem {
-  width: 132px;
-  height: 132px;
+  width: 112px;
+  height: 112px;
   object-fit: cover;
-  border-radius: 18px;
+  border-radius: 16px;
   border: 1px solid rgba(255, 255, 255, 0.14);
   box-shadow: 0 12px 28px rgba(0, 0, 0, 0.28);
 }
 
 .secao-jogos {
-  padding: 18px 0 28px;
+  padding: 14px 0 22px;
 }
 
 .secao-jogos__cabecalho {
@@ -50,16 +50,16 @@
 
 .lista-jogos {
   display: grid;
-  gap: 12px;
+  gap: 18px;
 }
 
 .partida {
   display: grid;
   grid-template-columns: minmax(0, 1fr) auto minmax(0, 1fr);
   align-items: center;
-  gap: 12px;
-  padding: 16px 18px;
-  border-radius: 18px;
+  gap: 10px;
+  padding: 14px 16px;
+  border-radius: 16px;
   border: 1px dashed rgba(255, 255, 255, 0.5);
   background: linear-gradient(90deg, rgba(11, 42, 83, 0.92), rgba(11, 42, 83, 0.72));
   box-shadow: var(--shadow);
@@ -68,10 +68,10 @@
 .time {
   display: inline-flex;
   align-items: center;
-  gap: 10px;
+  gap: 8px;
   min-width: 0;
   font-weight: 800;
-  font-size: 0.95rem;
+  font-size: 0.92rem;
 }
 
 .time-adversario {
@@ -87,39 +87,50 @@
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  min-width: 78px;
-  padding: 8px 14px;
+  min-width: 72px;
+  padding: 7px 12px;
   border-radius: 999px;
   background: rgba(47, 157, 244, 0.14);
   border: 1px solid rgba(47, 157, 244, 0.28);
   color: #e8f7ff;
-  font-size: 1rem;
+  font-size: 0.98rem;
   font-weight: 800;
   letter-spacing: 0.02em;
 }
 
+.descricao-jogo {
+  grid-column: 1 / -1;
+  width: 100%;
+  margin-top: 8px;
+  line-height: 1.6;
+  color: var(--muted);
+  text-align: left;
+}
+
 @media (max-width: 720px) {
   .centralizador {
-    width: min(100% - 14px, 920px);
+    width: min(100% - 8px, 960px);
   }
 
 .cabecalho-principal__conteudo {
     flex-direction: column;
     align-items: flex-start;
-    padding: 18px;
+    padding: 14px;
+    border-radius: 16px;
   }
 
 .cabecalho-principal__imagem {
-    width: 100px;
-    height: 100px;
+    width: 88px;
+    height: 88px;
   }
 
 .partida {
   grid-template-columns: 1fr;
   justify-items: center;
   text-align: center;
-  padding: 14px 16px;
-  gap: 12px;
+  padding: 12px 12px;
+  gap: 10px;
+  border-radius: 14px;
 }
 
 .time-adversario {
@@ -127,11 +138,10 @@
   text-align: center;
   flex-direction: row-reverse;
   }
-}
 
-.descricao-jogo {
-  grid-column: 1 / -1;
-  width: 100%;
-  margin-top: 12px;
-  text-align: justify;
+  .descricao-jogo {
+    margin-top: 6px;
+    font-size: 0.95rem;
+    text-align: left;
+  }
 }

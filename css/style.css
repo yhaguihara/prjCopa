@@ -22,10 +22,9 @@ body {
     margin: 0;
     min-height: 100vh;
     background:
-        linear-gradient(rgba(7, 24, 45, 0.78), rgba(11, 31, 58, 0.92)),
-        radial-gradient(circle at top left, rgba(47, 157, 244, 0.22), transparent 30%),
-        radial-gradient(circle at top right, rgba(55, 201, 125, 0.16), transparent 28%),
-        linear-gradient(180deg, #07182d 0%, var(--bg) 100%);
+        radial-gradient(circle at top left, rgba(47, 157, 244, 0.18), transparent 28%),
+        radial-gradient(circle at top right, rgba(55, 201, 125, 0.12), transparent 26%),
+        linear-gradient(180deg, #08182d 0%, var(--bg) 100%);
     color: var(--text);
     font-family: "Nunito", sans-serif;
     }
@@ -54,7 +53,7 @@ h3 {
     }
 
 .centralizador {
-    width: min(920px, calc(100% - 20px));
+    width: min(960px, calc(100% - 12px));
     margin: 0 auto;
 }
 
@@ -63,8 +62,8 @@ h3 {
     letter-spacing: 0.18em;
     font-size: 0.72rem;
     color: #7fdbff;
-        font-weight: 800;
-    }
+    font-weight: 800;
+}
 
 .bandeira {
     display: block;
@@ -73,4 +72,4 @@ h3 {
     object-fit: cover;
     border-radius: 4px;
     border: 1px solid rgba(255, 255, 255, 0.16);
-    }
+}
